@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <meta name="format-detection" content="telephone=no">
 
-    <title>citisource.io מערכת מידע וביקורות על ספקים לרשויות מקומיות</title>
+    <title>kifeti מערכת מידע וביקורות על ספקים לרשויות מקומיות</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -34,7 +34,7 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">ניווט באתר</span><i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">citisource.io</a>
+                <a class="navbar-brand page-scroll" href="#page-top">kifeti</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -54,21 +54,23 @@
     </nav>
 
     <header title="מערכת מידע וביקורות על ספקים לרשויות מקויות. חינמית לחלוטין.">
-        <div class="constellation-div">
-            <canvas class="constellation-canvas"></canvas>
-        </div>
-        <div class="header-content">         
-            <div class="header-content-inner">
-                <h1 id="homeHeading">מידע וביקורות על כל מנהל פרויקטים. מכל תחום. בחינם.</h1>
-                <hr>
-                <p>אנחנו בונים מאגר מידע ארצי לספקים ומנהלי פרויקטים של רשויות מקומיות. המאגר הכולל מידע על פרויקטים בעבר, ביקורות מרשויות אחרות ומגוון נתונים שחשוב שתדעו לפני שתבחרו ספק במכרז הבא.</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll" style="position:relative; text-align:center; z-index:1000;">מה הקטע בעצם?</a>  
-                <div class="constellation-div">
-                    <canvas class="constellation-canvas"></canvas>
-                </div>          
+        <div class="bckrnd">
+            <div class="constellation-div">
+                <canvas class="constellation-canvas"></canvas>
+            </div>
+            <div class="header-content">         
+                <div class="header-content-inner">
+                    <h1 id="homeHeading">Kifeti</h1>
+                    <hr>
+                    <h2>מידע וביקורות על כל ספק ומנהל פרויקטים. מכל תחום. בחינם.</h2>
+                    <p>אנחנו בונים מאגר מידע ארצי לספקים ומנהלי פרויקטים של רשויות מקומיות. המאגר הכולל מידע על פרויקטים בעבר, ביקורות מרשויות אחרות ומגוון נתונים שחשוב שתדעו לפני שתבחרו ספק במכרז הבא.</p>
+                    <a href="#about" class="btn btn-primary btn-xl page-scroll" style="position:relative; text-align:center; z-index:1000;">מה הקטע?</a>  
+                    <div class="constellation-div">
+                        <canvas class="constellation-canvas"></canvas>
+                    </div>          
+                </div>
             </div>
         </div>
-
     </header>
 
     <section class="bg-primary" id="about">
@@ -77,7 +79,7 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">תתחילו לעבוד עם מנהלי פרויקטים שיודעים את העבודה.</h2>
                     <hr class="light">
-                    <p class="text-faded">יש לנו אתר מדהים. לקח לנו יומיים להרים אותו. אז איך זה שלאתר הרשות שלך לקח שלושה חודשים ועשרות אלפי שקלים להיות עד שקיבלתם תוצר? כי מנהל הפרויקט ידע שהוא יכול להרשות לעצמו לתת לכם שירות ברמה נמוכה. אנחנו בונים את המערכת שתשים לזה סוף. והיא חינמית לכל רשות מקומית.</p>
+                    <p class="text-faded">יש לנו אתר מדהים. לקח לנו שלושה ימים להרים אותו. אז איך פיתוח אתר הרשות שלך לקח שלושה חודשים ועלה עשרות אלפי שקלים? כי מנהל הפרויקט ידע שהוא יכול להרשות לעצמו לתת לכם שירות ברמה נמוכה. אנחנו בונים את המערכת שתשים לזה סוף. והיא חינמית לכל רשות מקומית.</p>
                     <a href="#contact" class="page-scroll btn btn-default btn-xl sr-button">הצטרפו אלינו!</a>
                 </div>
             </div>
@@ -98,8 +100,12 @@
                 <div class="col-lg-4 text-center">
                     <i class="fa fa-envelope-o fa-3x sr-contact"></i>                      
                     <div class="form-group">
-                        <input type="email" class="form-control" name="msg" id="email" placeholder='כתובת דוא"ל'/>
-                        <button type="button" class="btn btn-primary btn-m" id="emailButton" onclick="LPAWS.sendToTopic(); return false;">שלחו לי פרטים נוספים!</button>
+                        <form action="https://formspree.io/nathanjw.gis@gmail.com"
+                              method="POST">
+                            <input type="text" name="name">
+                            <input type="email" class="form-control" id="email" placeholder='כתובת דוא"ל' name="_replyto">
+                            <button type="submit" value="Send" class="btn btn-primary btn-m" id="emailButton">שלחו לי פרטים נוספים!</button>
+                        </form>
                     </div>
                 </div>
             </div>
