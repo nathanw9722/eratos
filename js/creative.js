@@ -47,16 +47,16 @@ $(function(){
 // Initialize the Amazon Cognito credentials provider
 AWS.config.region = 'eu-central-1'; // Region
 AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-    IdentityPoolId: 'eu-central-1:750e4d83-1b61-482c-9257-c84c577c10c9',
+    IdentityPoolId: 'eu-central-1:7fc28c76-f548-44af-997c-ede646392a75',
 });
 
 LPAWS.sendToTopic = function() {
             var sns = new AWS.SNS();
             var params = {
                 //Message: 'Hello topic', /* required */
-                Message: document.querySelector('#input-msg').value,
+                Message: document.querySelector('#input-name').value + ", " + document.querySelector('#input-email').value,
                 Subject: 'Browser SNS publish - contact form',
-                TopicArn: 'arn:aws:sns:eu-central-1:322447592164:email_address'
+                TopicArn: 'arn:aws:sns:eu-central-1:322447592164:email_form'
             };
             sns.publish(params, function(err, data) {
                 if (err) console.log(err, err.stack); // an error occurred
